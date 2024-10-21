@@ -1,0 +1,56 @@
+[project]
+name = "simulacion-problemas-clasicos"
+version = "1.0.0"
+description = "Proyecto final Sistemas Operativos 1 UMG"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Kevin Guerra", email = "kguerras@miumg.edu.gt" }
+]
+maintainers = [
+  {name = "Kevin Guerra", email = "kevinguerra89@outlook.com" },
+  {name = "Daniel Contreras", email = "" },
+  {name = "Edgar Diaz", email = "" }
+]
+dependencies = [
+  "rich",
+  "typer",
+  "importlib"
+]
+
+[project.scripts]
+run = "simulacion_problemas_clasicos.main:main"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.setuptools.packages.find]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
