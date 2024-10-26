@@ -1,9 +1,9 @@
 [project]
 name = "simulacion-problemas-clasicos"
-version = "1.0.0"
+version = "1.0.1"
 description = "Proyecto final Sistemas Operativos 1 UMG"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 authors = [
   {name = "Kevin Guerra", email = "kguerras@miumg.edu.gt" }
 ]
@@ -15,7 +15,8 @@ maintainers = [
 dependencies = [
   "rich",
   "typer",
-  "importlib"
+  "importlib",
+  "setuptools"
 ]
 
 [project.scripts]
