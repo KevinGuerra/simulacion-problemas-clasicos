@@ -5,7 +5,7 @@ import typer
 from simulacion_problemas_clasicos import __app_name__, __version__
 from simulacion_problemas_clasicos.modules import dekker, filosofos_comensales
 
-app = typer.Typer()
+app = typer.Typer(add_completion=False)
 
 
 def _version_callback(value: bool) -> None:
@@ -14,13 +14,13 @@ def _version_callback(value: bool) -> None:
         raise typer.Exit()
 
 
-@app.callback()
+@app.callback(invoke_without_command=True, no_args_is_help=True)
 def main(
     version: Optional[bool] = typer.Option(
         None,
         "--version",
         "-v",
-        help="Show the application's version and exit.",
+        help="Muestra la versión actual del proyecto.",
         callback=_version_callback,
         is_eager=True,
     )

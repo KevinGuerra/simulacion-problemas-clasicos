@@ -9,8 +9,8 @@ authors = [
 ]
 maintainers = [
   {name = "Kevin Guerra", email = "kevinguerra89@outlook.com" },
-  {name = "Daniel Contreras", email = "" },
-  {name = "Edgar Diaz", email = "" }
+  {name = "Daniel Contreras"},
+  {name = "Edgar Diaz" }
 ]
 dependencies = [
   "rich",
